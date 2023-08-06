@@ -1,39 +1,34 @@
 fun main() {
     println("Enter your number:")
-    val num:Int = readln().toInt()
+    val num:Float = readln().toFloat()
 
-    if(num>=80) {
-        println("Grade: A+")
-        println("GPA: 5.00")
+    if (num > 100) {
+        println("Invalid Number! Enter a number between 0-100.")
+    }
+    else if(num>=80) {
+        println("Grade: A+ \nGPA: 5.00")
     }
     else if (num>=70){
-        println("Grade: A")
-        println("GPA: 4.00")
+        println("Grade: A \nGPA: 4.00")
     }
 
     else if (num>= 60) {
-        println("Grade: A-")
-        println("GPA: 3.5")
+        println("Grade: A- \nGPA: 3.5")
     }
 
     else if (num>=50) {
-        println("Grade: B")
-        println("GPA: 3.00")
+        println("Grade: B \nGPA: 3.00")
     }
 
     else if (num>=40){
-        println("Grade: C")
-        println("GPA: 2.00")
+        println("Grade: C \nGPA: 2.00")
     }
 
     else if (num>=33) {
-        println("Grade: D")
-        println("GPA: 1.00")
+        println("Grade: D \nGPA: 1.00")
     }
+
     else {
-        println("Grade: F")
-        println("GPA: 0.00")
-        println(" ")
-        println("YOU FAILED!")
+        println("Grade: F \nGPA: 0.00 \n \nYOU FAILED!")
     }
 }
